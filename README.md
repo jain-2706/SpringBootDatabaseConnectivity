@@ -29,11 +29,15 @@ It provides a REST API connected to a **MySQL database** using **Spring Data JPA
 Example `application.properties` for MySQL:
 
 ```properties
-spring.datasource.url=jdbc:mysql://localhost:3306/mydatabase
-spring.datasource.username=root
-spring.datasource.password=yourpassword
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-
-spring.jpa.hibernate.ddl-auto=update
+spring.application.name=demo
+server.port=1234
+server.address=0.0.0.0
 spring.jpa.show-sql=true
-spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.generate-ddl=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.dialect=org.hibernate.dialect.MySQLDialect
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jdbc:mysql://127.0.0.1:2567/fullStack
+spring.datasource.username=root
+
+
