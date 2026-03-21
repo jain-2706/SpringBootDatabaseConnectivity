@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <link rel="stylesheet" th:href="@{/design.css}" />
+
+  <body>
+    <div>
+      <span>Hello Boy</span>
+    </div>
+    <section th:replace="base::page(~{::main})"></section>
+    <div>
+      <span>Hello Flatmates</span>
+    </div>
+    <main class="draw">
+      <div>
+        <span>This is my First Content</span>
+        <br />
+        <span>This is my second content</span>
+        <br />
+        <span>This is my Third Content</span>
+      </div>
+    </main>
+  </body>
+</html>
