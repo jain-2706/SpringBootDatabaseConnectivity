@@ -7,6 +7,7 @@ import com.example.fragment_thymeleaf.demo.Entity.UserClass;
 
 
 @Component
-public interface UserRepository extends CrudRepository<UserClass, String> {
-
+public interface UserRepository extends CrudRepository<UserClass, Long> {
+   boolean existsByEmail(String email);
+  
 }

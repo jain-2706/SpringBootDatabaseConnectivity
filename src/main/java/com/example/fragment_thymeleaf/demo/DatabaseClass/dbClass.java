@@ -26,7 +26,7 @@ public class dbClass {
       return li;
    }
    //Getting the Particular User
-   public UserClass use(String id)
+   public UserClass use(Long id)
    {
     UserClass u1=urepo.findById(id).orElse(null);
     return u1;
@@ -37,6 +37,10 @@ public class dbClass {
    //Posting the Data
    public boolean postData(UserClass u)
    {
+      if(urepo.existsByEmail(u.getEmail()))
+      {
+         return false;
+      }
       long a=urepo.count();
       urepo.save(u);
       long b=urepo.count();
@@ -45,7 +49,7 @@ public class dbClass {
    }
 
    //Deleting the Data
-   public boolean deleteUser(String id)
+   public boolean deleteUser(Long id)
    {
      if(urepo.existsById(id))
      {
@@ -57,7 +61,7 @@ public class dbClass {
 
 
    //Updating the Data
-   public UserClass updateUser(UserClass u,String id)
+   public UserClass updateUser(UserClass u,Long id)
    {
        if(urepo.existsById(id))
        {

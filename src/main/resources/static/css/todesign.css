@@ -1,0 +1,11 @@
+.para {
+  background-color: yellow;
+  font-size: 20;
+  font-family:
+    "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+#designingPage {
+  height: 150px;
+  width: 100px;
+}
