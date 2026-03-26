@@ -16,11 +16,16 @@ It provides a REST API connected to a **MySQL database** using **Spring Data JPA
 
 ---
 
-## Project Snapshot
+## 📸 Project Snapshot
 
-<p align="center">
-  <img src="images/95d8c931-6be4-46f2-a546-a5ebeeba0b02.png" width="600" />
-</p>
+### Controller
+![Controller](src/main/resources/screenshots/Controller.png)
+
+### Database Class
+![Database](src/main/resources/screenshots/DatabaseClass.png)
+
+### Repository
+![Repository](src/main/resources/screenshots/Repository.png)
 
 ---
 
